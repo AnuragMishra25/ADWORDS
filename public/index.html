@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Sheets API Quickstart</title>
+    <meta charset='utf-8' />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <p>Google Sheets API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize-button" style="display: none;">Authorize</button>
+    <button id="signout-button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="display:none"></pre>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5">
+                <div class="row">
+                    <h3> INPUT DATA</h3>
+                </div>
+                <div class="row">
+                    <table id="inputTable" class=" table order-list">
+                        <thead>
+                            <tr>
+                                <td class="col-xs-2">Row</td>
+                                <td class="col-xs-7">Keyword</td>
+                                <td class="col-xs-3">Type</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                        <td class="col-sm-2">
+                                            <label name="rowNumber" class="form-control" />
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <label name="keyword" class="form-control" />
+                                        </td>
+                                        <td class="col-sm-2">
+                                            <label name="type" class="form-control" />
+                                        </td>
+                                    </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-xs-7">
+                <div class="row">
+                    <h3> OUTPUT DATA</h3>
+                </div>
+                <div class="row">
+                    <table id="myTable" class=" table order-list">
+                        <thead>
+                            <tr>
+                                <td class="col-xs-1">Row</td>
+                                <td class="col-xs-5">Keyword</td>
+                                <td class="col-xs-3">Type</td>
+                                <td class="col-xs-1">Duplicate</td>
+                                <td class="col-xs-2">Rows</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                        <td class="col-sm-4">
+                                            <label name="rowNumber" class="form-control" />
+                                        </td>
+                                        <td class="col-sm-4">
+                                            <label name="keyword" class="form-control" />
+                                        </td>
+                                        <td class="col-sm-2">
+                                            <label name="type" class="form-control" />
+                                        </td>
+                                        <td class="col-sm-1">
+                                            <label name="duplicate" class="form-control" />
+                                        </td>
+                                        <td class="col-sm-5">
+                                            <label name="rows" class="form-control" />
+                                        </td>
+                                    </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+
+</html>
